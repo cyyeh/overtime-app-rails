@@ -1,0 +1,10 @@
+= form_tag posts_path do
+  = label :post, :date, 'Date'
+  %br
+  = date_field :post, :date
+  %br
+  = label :post, :rationale, 'Rationale'
+  %br
+  = text_area :post, :rationale
+
+  = submit_tag 'Save'
