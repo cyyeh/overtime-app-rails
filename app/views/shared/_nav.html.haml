@@ -2,9 +2,9 @@
   %h1 Time Tracker
 
 %ul.nav.nav-tabs.custom-nav
-  %li.active
+  %li{:class => active?(root_path)}
     =link_to "Home", root_path
-  %li
+  %li{:class => active?(posts_path)}
     =link_to "Time Entries", posts_path
   %li.dropdown.pull-right
     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}

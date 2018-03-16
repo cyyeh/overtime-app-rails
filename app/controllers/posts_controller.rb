@@ -2,6 +2,7 @@ class PostsController < ApplicationController
   before_action :set_post, only: [:show]
 
   def index
+    @posts = Post.all
   end
 
   def new
@@ -15,7 +16,7 @@ class PostsController < ApplicationController
     if @post.save
       redirect_to @post, notice: 'Your post was created successfully'
     else
-      render new
+      render :new
     end
   end
 
