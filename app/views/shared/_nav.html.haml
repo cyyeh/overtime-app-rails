@@ -1,7 +1,7 @@
-%div.logo
-  %h1 Time Tracker
-
 - if current_user
+  %div.logo
+    %h1 Time Tracker
+
   %ul.nav.nav-tabs.custom-nav
     %li{:class => active?(root_path)}
       =link_to "Home", root_path

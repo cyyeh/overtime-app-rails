@@ -7,3 +7,17 @@
 .custom-nav {
     margin-top: 15px;
 }
+
+.flexbox-center {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.box {
+    padding: 50px;
+    border: 1px solid darkgray;
+    border-radius: 10%;
+}
