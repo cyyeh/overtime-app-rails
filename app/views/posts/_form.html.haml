@@ -1,9 +1,12 @@
-= label :post, :date, 'Date'
-%br
-= date_field :post, :date
-%br
-= label :post, :rationale, 'Rationale'
-%br
-= text_area :post, :rationale
-
-= submit_tag 'Save'
+%form.form-horizontal{:role => "form"}
+  .form-group
+    = label :post, :date, 'Date', :class => 'col-sm-2 control-label'
+    .col-sm-10
+      = date_field :post, :date, :class => 'form-control'
+  .form-group
+    = label :post, :rationale, 'Rationale', :class => 'col-sm-2 control-label'
+    .col-sm-10
+      = text_area :post, :rationale, :class => 'form-control'
+  .form-group
+    .col-sm-offset-2.col-sm-10
+      = submit_tag('Save', :class => 'btn btn-primary btn-block')
