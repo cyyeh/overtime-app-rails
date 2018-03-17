@@ -12,3 +12,4 @@
       .col-md-12
         = render 'shared/nav'
         = yield
+  = js add_gritter(flash[:notice], title: "Overtime App Notification", sticky: false, time: 3000, image: :notice)

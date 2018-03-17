@@ -1,4 +1,8 @@
 %form.form-horizontal{:role => "form"}
+  - if @post.errors.any?
+    - @post.errors.full_messages.each do |msg|
+      = js add_gritter(msg, title: "Overtime App Notification", sticky: false, time: 3000, image: :notice)
+
   .form-group
     = label :post, :date, 'Date', :class => 'col-sm-2 control-label'
     .col-sm-10
