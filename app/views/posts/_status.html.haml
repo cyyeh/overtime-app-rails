@@ -1,0 +1,8 @@
+.form-group
+  .col-sm-offset-2.col-sm-10
+    = radio_button :post, :status, 'submitted'
+    = label :post, :status, 'Submitted', :class => 'control-label'
+    = radio_button :post, :status, 'approved'
+    = label :post, :status, 'Approved', :class => 'control-label'
+    = radio_button :post, :status, 'rejected'
+    = label :post, :status, 'Rejected', :class => 'control-label'   

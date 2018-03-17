@@ -11,6 +11,7 @@
     = label :post, :rationale, 'Rationale', :class => 'col-sm-2 control-label'
     .col-sm-10
       = text_area :post, :rationale, :class => 'form-control'
+  = render 'status' if current_user.type == 'AdminUser'
   .form-group
     .col-sm-offset-2.col-sm-10
       = submit_tag('Save', :class => 'btn btn-primary btn-block')
