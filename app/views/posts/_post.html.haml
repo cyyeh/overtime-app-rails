@@ -12,6 +12,6 @@
   %td
     = status_label(post.status)
   %td
-    = link_to 'Edit', edit_post_path(post), :id => "edit_#{post.id}" if policy(post).update?
+    = link_to '', edit_post_path(post), :id => "edit_#{post.id}", :class => 'glyphicon glyphicon-pencil index-icons' if policy(post).update?
   %td
-    = link_to 'Delete', post_path(post), method: :delete, :id => "delete_#{post.id}", data: { confirm: 'Are you sure?' }    
+    = link_to '', post_path(post), method: :delete, :id => "delete_#{post.id}", :class => 'glyphicon glyphicon-trash index-icons', data: { confirm: 'Are you sure?' }    
