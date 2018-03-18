@@ -1,1 +1,17 @@
-= @post.inspect
+%h2 
+  = @post.rationale
+.well
+  %h3
+    Overtime Amount Requested:
+    = @post.overtime_request
+  %h3
+    Employee:
+    = @post.user.full_name
+  %h3
+    Date:
+    = @post.date
+  %h3
+    Status:
+    = @post.status
+
+= link_to 'Edit', edit_post_path(@post), :class => 'btn btn-primary' if policy(@post).update?
