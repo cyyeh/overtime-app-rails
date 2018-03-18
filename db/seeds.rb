@@ -7,7 +7,7 @@ AdminUser.create(email: "root@gmail.com", password: "000000", password_confirmat
 puts "1 Admin User created"
 
 100.times do |post|
-  Post.create!(date: Date.today, rationale: "#{post} rationale content", user_id: @user.id)
+  Post.create!(date: Date.today, rationale: "#{post} rationale content", user_id: @user.id, overtime_request: 2.5)
 end
 
 puts "100 posts have been created"

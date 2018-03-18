@@ -4,6 +4,10 @@
       = js add_gritter(msg, title: "Overtime App Notification", sticky: false, time: 3000, image: :notice)
 
   .form-group
+    = label :post, :overtime_request, 'Overtime Request', :class => 'col-sm-2 control-label'
+    .col-sm-10
+      = text_field :post, :overtime_request, :class => 'form-control'
+  .form-group
     = label :post, :date, 'Date', :class => 'col-sm-2 control-label'
     .col-sm-10
       = date_field :post, :date, :class => 'form-control'
